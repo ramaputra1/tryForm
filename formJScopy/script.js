@@ -3,10 +3,10 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
 
   // Collect form data
   const firstName = document.getElementById("firstName").value.trim();
-  const age = parseInt(document.getElementById("age").value, 10);
+  const age = parseInt(document.getElementById("age").value, 10); //What is ten
   const from = document.getElementById("from").value.trim();
-  const comments = document.getElementById("comments").value.trim();
-  const rating = parseInt(document.getElementById("rating").value, 10);
+  const comments = document.getElementById("comments").value.trim(); // why use trim
+  const rating = parseInt(document.getElementById("rating").value, 10); //What is ten
 
   // Validate inputs
   if (!firstName || !from || !comments) {
@@ -15,6 +15,7 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
   }
 
   if (!age || age < 18 || age > 100) {
+    //di atas 18 tok
     alert("Please enter a valid age (18-100).");
     return;
   }
@@ -54,6 +55,7 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
   };
 
   xhr.onerror = function () {
+    //what is that
     alert("Unable to connect to the server.");
   };
 
