@@ -59,24 +59,15 @@
         </div>
 
         <div class="form-group">
-          <label>Rate this page:</label>
-          <div class="radio-group">
-            <label
-              ><input type="radio" name="rating" value="1" required /> 1</label
-            >
-            <label
-              ><input type="radio" name="rating" value="2" required /> 2</label
-            >
-            <label
-              ><input type="radio" name="rating" value="3" required /> 3</label
-            >
-            <label
-              ><input type="radio" name="rating" value="4" required /> 4</label
-            >
-            <label
-              ><input type="radio" name="rating" value="5" required /> 5</label
-            >
-          </div>
+          <label for="rating">Rate this page:</label>
+          <select id="rating" name="rating" required>
+            <option value="" disabled selected>Select your rating</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
         </div>
 
         <div class="form-group">
