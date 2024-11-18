@@ -28,6 +28,7 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
       const response = JSON.parse(xhr.responseText);
       document.getElementById("message").innerHTML = response.messsage;
       document.getElementById("myForm").innerHTML = "";
+      document.getElementById("foot").innerHTML = "";
     } else if (xhr.readyState === 4) {
       alert("An error occurred while submitting the form.");
     }
