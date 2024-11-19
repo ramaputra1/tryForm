@@ -47,9 +47,10 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
 
       // Clear the form and notify user
 
-      document.getElementById("myForm").innerHTML = "";
+      document.getElementById("myForm").style.display = "none";
       // document.getElementById("myForm").style.display = "none";
-    } else {
+    } else if (xhr.readyState === 4) {
+      // Only alert if the request is complete and unsuccessful
       alert("An error occurred while submitting the form.");
     }
   };

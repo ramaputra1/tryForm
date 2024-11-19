@@ -14,6 +14,10 @@ body {
   height: 100vh;
 }
 
+textarea {
+  font-family: Arial, sans-serif;
+}
+
 header {
   background: #560060;
   color: white;
